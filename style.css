@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgb(67, 67, 67);
+}
+
+nav h1{
+    font-family: 'Fredericka the Great', cursive; 
+    font-size: 30px;  
+    margin-left: 10px;
+}
+
+nav .right-nav{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+nav .right-nav button{
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+nav .right-nav button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 170px;
+    position: relative;
+}
+.hero p{
+    font-size: 23px;
+}
+
+.hero form{
+    background-color: black;
+    color: white;
+    width: 600px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.hero form input{
+    background-color: transparent;
+    width: 90%;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    padding: 0 20px;
+    border: none;
+}
+.hero form button{
+    width: 9%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.search-results{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 30px;
+    padding: 30px;
+}
+
+.search-result{
+    width: 30%;
+    height: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.search-result .options{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: none;
+}
+
+.search-result .options i{
+    font-size: 30px;
+    color: white;
+}
+
+.search-result img:hover{
+    scale: 1.2;
+    transition: all ease 0.3s;
+
+}
+
+.search-result img:hover + .options{
+    display: block;
+}
+
+
+
+.search-result img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#show-more{
+    height: 45px;
+    width: 110px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: black;
+    
+    display: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#show-more:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+}
+
+.show-more-button{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+}
+
