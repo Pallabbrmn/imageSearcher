@@ -169,3 +169,83 @@ nav .right-nav button:hover{
     justify-content: center;
 }
 
+@media screen and (max-width: 320px) {
+
+    nav{
+        padding: 10px;
+    }
+
+
+    .right-nav a{
+        display: none;
+    }
+
+    .hero #slogan{
+        display: none;
+    }  
+    
+    .hero{
+        padding: 30px 30px;
+    }
+
+    .hero form{
+        background-color: black;
+        color: white;
+        width: 270px;
+        height: 50px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .hero form button{
+        margin-right: 10px;
+    }
+
+    .search-results{
+        padding-top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-results .search-result{
+        width: 99%;
+        height: 200px;
+    }
+
+    .show-more-button{
+        display: none;
+    }
+
+
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .search-result{
+        width: 47%;
+        height: 250px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .hero{
+        padding: 50 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .hero p{
+        font-size: 20px;
+        line-height: 1;
+    }
+
+
+    
+}
+
